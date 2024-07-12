@@ -1,2 +1,7 @@
 # SCID2024
-parte front-end do SCID 
+parte front-end do SCID (com HTML/CSS/JS até o momento -JUL/24-)
+Sistema de Comparação de Impressão Digital-SCID: resumidamente este sistema irá comparar impressões digitais (ID) colhidas em cena de crime para posterior identificação e andamento em investigações, sendo a identificação e análise buscada em servidor de Banco de Dados (BD) à parte (ainda não definido). Antes de iniciar a comparação, as imagens das ID serão editadas (marcação de pontos em que na imagem está 'apagado', aplicação de filtros para melhor nitidez e visualização, girar e cortar as imagens), terá também a medição da ID, o usuário envia a medida  da ID em cm/mm, e o sistema calcula (interface do servidor) para pixels (esta função serve para o sistema entender o tamanho da imagem no mundo real). Marcação dos pontos características da ID,  a marcação será em pontos, tendo ajuda do zoom, para marcar corretamente, após envio das imagens já editadas e marcadas, o sistema irá analisar, e comparar com as imagens do Banco de Dados, hospedado no servidor parte, concluída a análise e comparação, o sistema dará uma lista com a busca concluída de todas as ID enviadas, cada ID analisada terá uma lista dos possíveis "donos" da ID, apontando nome e taxa de correspondência (% de semelhança entre a imagem enviada com a do BD), com seus dados básicos.
+
+- Este é o projeto em Fron-end baseado na interface feita no FIGMA, link: https://www.figma.com/design/tWMWMdlru1VNxDixXmEyyV/INTERFACE-1-SCID?node-id=2-109&t=J4GdgriFTrqHQAtW-1
+- Projeto front-end elaborado por: Erinaldo Júnior e Jennifer Diniz
+- Supervisor: Perito Criminal Franclin
