@@ -1,0 +1,231 @@
+/* CSS para o body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    margin: 0; /* Remove a margem padrão do body */
+    padding: 30px; /* Adiciona padding para afastar as divs das bordas da página */
+}
+
+/* CSS para a barra de navegação */
+.barra-de-navegação {
+    background-color: #104060;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente os itens filhos */
+    z-index: 2; /* Garante que a barra de navegação esteja acima da barra lateral */
+    margin-bottom: 10px; /* Margem inferior menor */
+}
+
+.barra-de-navegação .icon-link {
+    margin-right: 20px; /* Espaçamento entre o ícone e o título */
+    color: white; /* Cor do ícone */
+}
+
+.barra-de-navegação h1 {
+    margin: 0;
+    margin-left: auto; /* Coloca o h1 na extremidade direita da barra de navegação */
+    padding-right: 30px; /* Adiciona um padding à direita para afastar o h1 da lateral */
+}
+
+.barra-de-navegação .icone {
+    font-size: 1.5em; /* Ajuste o tamanho do ícone conforme necessário */
+}
+
+/* CSS para o container abaixo da barra de navegação */
+.container {
+    margin-top: 20px; /* Margem superior menor */
+    padding: 20px;
+}
+
+/* CSS para o ícone de exclusão */
+.remove-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 1em;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+/* Adicionando um efeito de hover */
+.remove-icon:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* CSS para a imagem selecionada */
+.image-item.selected {
+    border: 2px solid #104060; /* Cor #105282 para destacar a imagem selecionada */
+    box-shadow: 0 0 5px #104060; /* Sombra #105282 para destacar a imagem selecionada */
+}
+
+/* CSS para o container de imagem */
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    border: 2px solid #104060;
+    padding: 10px;
+    border-radius: 5px;
+    min-height: 100px; /* Altura mínima do retângulo */
+    position: relative;
+}
+
+.add-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.add-image i {
+    font-size: 2em;
+    color: #104060;
+}
+
+.image-container img {
+    max-width: 100px;
+    max-height: 100px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 2px solid #104060;
+    object-fit: cover;
+}
+
+/* CSS para a div de filtro */
+.filtro-container {
+    float: left; /* Coloca a div à esquerda */
+    margin-top: 20px; /* Espaço acima da div de filtro */
+    margin-right: 20px; /* Adiciona margem à direita */
+    padding: 10px; /* Espaçamento interno */
+    background-color: #f0f0f0; /* Cor de fundo da div de filtro */
+    border-radius: 5px; /* Borda arredondada */
+}
+
+.filtro-container p {
+    margin: 0; /* Remove a margem superior e inferior do parágrafo */
+    font-weight: bold; /* Define o texto em negrito */
+}
+
+.filtro-link {
+    display: block;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    background-color: #104060;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: auto;
+}
+
+.filtro-link:hover {
+    background-color: #104060;
+}
+
+/* CSS para a div da imagem */
+.imagem-container {
+    float: right; /* Coloca a div à direita */
+    margin-top: 20px; /* Espaço acima da div de imagem */
+    margin-left: 20px; /* Adiciona margem */
+    padding: 10px; /* Espaçamento interno */
+    background-color: #f0f0f0; /* Cor de fundo da div de imagem */
+    border-radius: 5px; /* Borda arredondada */
+}
+
+.imagem-container p {
+    margin: 0; /* Remove a margem superior e inferior do parágrafo */
+    font-weight: bold; /* Define o texto em negrito */
+}
+
+.imagem-button {
+    display: block; /* Altera para exibição em bloco */
+    width: auto; /* Alterado para a largura do conteúdo */
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    background-color: #104060;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center; /* Centraliza o texto horizontalmente */
+}
+
+.imagem-button:hover {
+    background-color: #104060;
+}
+
+/* CSS para os botões adicionados */
+.bottom-buttons {
+    position: fixed; /* Fixa a posição para que fiquem sempre visíveis */
+    bottom: 20px; /* Distância do fundo da página */
+    right: 20px; /* Distância da borda direita da página */
+}
+
+.bottom-buttons .bottom-button {
+    display: inline-block;
+    margin-left: 10px; /* Adiciona margem entre os botões */
+    background-color: #104060;
+    color: white;
+    text-decoration: none;
+    border: none;
+    padding: 10px 40px;
+    
+}
+
+/* Novo CSS para o controlador de filtros */
+.controlador-filtros {
+    float: left; /* Coloca o controlador à esquerda */
+    margin-top: 20px; /* Espaço acima do controlador */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Borda arredondada */
+    position: relative; /* Para posicionamento relativo */
+}
+
+
+.controlador-filtros p {
+    margin: 0; /* Remove a margem superior e inferior do parágrafo */
+    font-weight: bold; /* Define o texto em negrito */
+}
+
+#slider {
+    width: 10px;
+    height: 200px;
+    background: #ddd;
+    border-radius: 5px;
+    position: relative;
+}
+
+#handle {
+    width: 20px; /* Largura do handle */
+    height: 20px; /* Altura do handle */
+    background-color: #104060; /* Cor de fundo do handle */
+    border-radius: 50%; /* Borda circular */
+    cursor: pointer; /* Cursor de ponteiro */
+    position: absolute; /* Posicionamento absoluto */
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Corrige o posicionamento */
+}
+/* Adicionando o estilo para o valor do filtro */
+#filterValue {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}

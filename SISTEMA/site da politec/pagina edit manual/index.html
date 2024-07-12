@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Comparação de Impressão Digital-SCID</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style_edit_manual.css">
+    <link rel="stylesheet" href="style_imagem.css">
+    <link rel="stylesheet" href="style_controlador_filtros.css"> <!-- Novo arquivo de estilo para o controlador de filtros -->
+    <link rel="stylesheet" href="style_carrossel.css"> <!-- Novo arquivo de estilo para o carrossel -->
+</head>
+<body>
+    
+    <div class="barra-de-navegação">
+        <a href="../pagina inicial funções/index.html" class="icon-link"><i class="fa-solid fa-house icone"></i></a>
+        <h1>SCID</h1>
+    </div>
+
+    <div class="container">
+        <h2>EDITE MANUALMENTE:</h2>
+        <div class="image-container" id="image-container">
+            <div class="add-image" id="add-image">
+                <i class="fa-solid fa-plus" id="add-image-icon"></i>
+                <input id="file-input" type="file" accept="image/*" style="display: none;">
+            </div>
+        </div>
+        <button id="prev-button">&larr;</button>
+        <button id="next-button">&rarr;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

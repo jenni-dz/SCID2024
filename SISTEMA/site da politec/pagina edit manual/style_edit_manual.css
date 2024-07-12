@@ -1,0 +1,145 @@
+/* CSS para o body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    margin: 0; /* Remove a margem padrão do body */
+    padding: 30px; /* Adiciona padding para afastar as divs das bordas da página */
+}
+
+/* CSS para a barra de navegação */
+.barra-de-navegação {
+    background-color: #104060;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente os itens filhos */
+    z-index: 2; /* Garante que a barra de navegação esteja acima da barra lateral */
+    margin-bottom: 10px; /* Margem inferior menor */
+}
+
+.barra-de-navegação .icon-link {
+    margin-right: 20px; /* Espaçamento entre o ícone e o título */
+    color: white; /* Cor do ícone */
+}
+
+.barra-de-navegação h1 {
+    margin: 0;
+    margin-left: auto; /* Coloca o h1 na extremidade direita da barra de navegação */
+    padding-right: 30px; /* Adiciona um padding à direita para afastar o h1 da lateral */
+}
+
+.barra-de-navegação .icone {
+    font-size: 1.5em; /* Ajuste o tamanho do ícone conforme necessário */
+}
+
+/* CSS para o container abaixo da barra de navegação */
+.container {
+    margin-top: 80px; /* Ajuste conforme necessário para evitar sobreposição com a barra de navegação */
+    padding: 20px;
+    position: relative; /* Necessário para os botões de navegação */
+}
+
+.remove-icon {
+    position: absolute;
+    top: -10px; /* Move o ícone para fora do quadrado, acima da imagem */
+    right: -10px; /* Move o ícone para fora do quadrado, à direita da imagem */
+    font-size: 1em;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    z-index: 1; /* Garante que o ícone fique sobreposto à imagem */
+}
+
+
+/* Adicionando um efeito de hover */
+.remove-icon:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+/* CSS para a imagem selecionada */
+.image-item.selected {
+    border: 2px solid #104060; /* Cor #105282 para destacar a imagem selecionada */
+    box-shadow: 0 0 5px #104060; /* Sombra #105282 para destacar a imagem selecionada */
+    position: relative; /* Define a posição como relativa para que o ícone de remoção fique relativo a esta imagem */
+    overflow: hidden; /* Garante que o ícone de remoção fique fora do quadrado */
+}
+
+.image-container {
+    position: relative;
+    width: 400px; /* Defina a largura desejada */
+    height: 400px; /* Defina a altura desejada */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    overflow: hidden;
+    border: 2px solid #104060;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.image-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none; /* Esconde todas as imagens por padrão */
+}
+
+.image-item.active {
+    display: block; /* Mostra apenas a imagem ativa */
+}
+
+.add-image {
+    position: absolute;
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1; /* Garante que o ícone esteja acima das outras imagens */
+}
+
+.add-image i {
+    font-size: 1.5em;
+    color: #104060;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    z-index: 0; /* Garante que a imagem fique abaixo do ícone de remoção */
+}
+
+#prev-button,
+#next-button {
+    position: fixed; /* Define a posição como fixa para que os botões fiquem fixos na janela do navegador */
+    bottom: 20px; /* Define a distância do fundo da página */
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    left: 48%; /* Move os botões para o meio */
+    transform: translateX(-50%); /* Ajusta a posição de volta em metade da largura dos botões */
+}
+
+#prev-button {
+    margin-right: 40px; /* Adiciona um espaço entre os botões */
+}
+
+#next-button {
+    margin-left: 40px; /* Adiciona um espaço entre os botões */
+}
+
+.container h2 {
+    text-align: center; /* Centraliza o texto horizontalmente */
+}

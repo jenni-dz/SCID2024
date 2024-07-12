@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Comparação de Impressão Digital-SCID</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style_aplique_filtro.css">
+    <link rel="stylesheet" href="style_imagem.css">
+    <link rel="stylesheet" href="style_controlador_filtros.css"> <!-- Novo arquivo de estilo para o controlador de filtros -->
+</head>
+<body>
+    
+    <div class="barra-de-navegação">
+        <a href="../pagina inicial funções/index.html" class="icon-link"><i class="fa-solid fa-house icone"></i></a>
+        <h1>SCID</h1>
+    </div>
+
+    <div class="container">
+        <h1>Adicione aqui:</h1>
+        <div class="image-container" id="image-container">
+            <div class="add-image" id="add-image">
+                <i class="fa-solid fa-plus" id="add-image-icon"></i>
+                <input id="file-input" type="file" accept="image/*" style="display: none;">
+            </div>
+        </div>
+    </div>
+
+    <div class="filtro-container">
+        <p>APLICAÇÃO DE FILTRO:</p>
+        <a href="filtro1.html" class="filtro-link">PRETO E BRANCO</a>
+        <a href="filtro2.html" class="filtro-link">SUAVISAR</a>
+        <a href="filtro3.html" class="filtro-link">CONVOLUÇÃO 2D</a>
+        <a href="filtro1.html" class="filtro-link">DESFOCAR</a>
+        <a href="filtro1.html" class="filtro-link">DESFOQUE MEDIANO</a>
+        <a href="filtro1.html" class="filtro-link">BILATERAL</a>
+        <a href="../pagina edit manual/index.html" class="filtro-link">EDITAR MANUALMENTE</a>
+    </div>
+
+    <!-- Novo HTML para o controlador de filtros -->
+    <div class="controlador-filtros">
+        <div id="slider">
+            <div id="handle"></div>
+        </div>
+        <span id="filterValue">0</span>
+    </div>
+    
+
+    <!-- Restante do HTML permanece inalterado -->
+
+    <div class="imagem-container">
+        <p>IMAGEM:</p>
+        <a href="#" class="imagem-button" id="selectAllImages">TODAS</a>
+        <a href="#" class="imagem-button">SOMENTE SELECIONADAS</a>
+    </div>
+
+    <div class="bottom-buttons">
+        <a href="#" class="bottom-button">Refazer</a>
+        <a href="#" class="bottom-button">Enviar</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+//window.location.href='SISTEMA/3redirecMedirIMG/index.html';

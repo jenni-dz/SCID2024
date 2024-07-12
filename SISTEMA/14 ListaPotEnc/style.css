@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #FFFFFF;
+}
+header{
+    background-color: #104060;
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header a{
+    width: 17px;
+    height: 17px;
+}
+header img{
+    width: 17px;
+    height: 17px;
+}
+header h3{
+    display: flex;
+    color: #FFFFFF;
+    width: 44px;
+    height: 20px;
+}
+.lista-dat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #c0ced7;
+    border: #104060 solid 2px;
+    border-radius: 3px;
+    width: 580px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+}
+.lista-dat table {
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+table th{
+    width: 200px;
+    height: 40px;
+}
+table tr{
+    width: 200px;
+    height: 40px;
+}
+table button{
+    background-color: #104060;
+    color: #FFFFFF;
+    cursor: pointer;
+    text-align: center;
+    width: 26px;
+    font-size: 12px;
+}
+.botao{
+   padding: 20px 0 20px 0;
+   display: flex;
+   justify-content: center;
+}
+.botao button{
+    background-color: #104060;
+    color: #FFFFFF;
+    cursor: pointer;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    width: 30px;
+    height: 20px;
+}

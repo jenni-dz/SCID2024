@@ -1,0 +1,102 @@
+/* CSS para o body */
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+}
+
+.login {
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    color: #104060;
+    border: 2px solid #104060;
+    text-align: center;
+}
+
+input {
+    padding: 15px;
+    font-size: 15px;
+    border: 2px solid #104060;
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px; /* Aumenta o padding para deixar o botão maior */
+    background-color: #104060;
+    color: white;
+    text-decoration: none;
+    border: none;
+}
+
+.button:hover {
+    background-color: #104060;
+}
+
+.login h1 {
+    color: #104060;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: -10px;
+    margin-bottom: 40px;
+}
+
+.login button {
+    margin-top: 20px;
+}
+
+.login ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.login ul li {
+    display: block;
+    margin-top: -5px;
+}
+
+.login ul li:first-child {
+    margin-left: 0;
+}
+
+.login ul li a {
+    text-decoration: none;
+    color: white; /* Cor do link na barra de navegação */
+    margin-top: 0;
+    font-size: 18px; /* Aumenta o tamanho da fonte do link */
+}
+
+/* Adicionando estilo para a barra de navegação */
+.barra-de-navegação {
+    background-color: #104060;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente os itens filhos */
+}
+
+.barra-de-navegação h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    text-align: center;
+    flex-grow: 1; /* Permite que o h1 ocupe o espaço restante */
+    color: white; /* Cor do texto na barra de navegação */
+}
+
+.logo {
+    width: 90px;
+    height: auto;
+    margin-right: 20px; /* Adiciona margem à direita para evitar corte */
+    margin-left: auto; /* Garante que o logo fique à direita */
+    fill: white; /* Cor do ícone na barra de navegação */
+}
+

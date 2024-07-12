@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f5f5f5;
+}
+header{
+    background-color: #104060;
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header a{
+    width: 17px;
+    height: 17px;
+}
+header img{
+    width: 17px;
+    height: 17px;
+}
+header h3{
+    display: flex;
+    color: #FFFFFF;
+    width: 44px;
+    height: 20px;
+}
+.box-alt{
+    width: 350px;
+    height: 225px;
+    background-color: #FFFFFF;
+    border: #104060 solid 2px;
+    border-radius: 3px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7%;
+    text-align: center;
+}
+
+article .alterar{
+    display: block;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.alterar p{
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.alterar input{
+    width: 20%;
+    height: 11%;
+    background-color: rgb(156, 154, 154);
+    margin-top: 12%;
+}
+.botoes{
+    margin-top: 15%;
+    justify-content: space-evenly;
+    display: flex;
+}
+.botoes button{
+    background-color: #104060;
+    color: #FFFFFF;
+    cursor: pointer;
+    width: 90px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}    
+.xxx {
+    margin-left: 92%;
+    display: flex;
+    margin-top: 2%;
+}
+.xxx img{
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    margin-top: 1%;
+}

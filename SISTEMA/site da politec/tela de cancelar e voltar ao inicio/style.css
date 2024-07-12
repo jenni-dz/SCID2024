@@ -1,0 +1,62 @@
+/* Estilos para o corpo da página */
+body {
+    display: flex; /* Usado para centralizar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Altura da viewport */
+    margin: 0; /* Remove margens padrão */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define a fonte padrão */
+}
+
+/* Estilos para o quadrado */
+.square {
+    width: 400px; /* Largura do quadrado */
+    height: 250px; /* Altura do quadrado */
+    display: flex; /* Usado para layout flexível */
+    flex-direction: column; /* Organiza os filhos em coluna */
+    justify-content: center; /* Centraliza verticalmente o conteúdo */
+    align-items: center; /* Centraliza horizontalmente o conteúdo */
+    border: 2px solid #000; /* Borda preta */
+    background-color: #f0f0f0; /* Cor de fundo cinza claro */
+    padding: 20px; /* Espaçamento interno */
+    box-sizing: border-box; /* Inclui padding e border no tamanho total */
+    text-align: center; /* Centraliza o texto */
+    border-radius: 15px; /* Arredonda as bordas */
+}
+
+/* Estilos para o título dentro do quadrado */
+.square h3 {
+    margin-bottom: 5px; /* Reduz a margem inferior para aproximar do parágrafo */
+}
+
+/* Estilos para o parágrafo dentro do quadrado */
+.square p {
+    margin-bottom: 20px; /* Espaçamento abaixo do texto */
+}
+
+/* Contêiner para alinhar os links como botões */
+.button-container {
+    display: flex; /* Usado para layout flexível */
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 35px; /* Espaçamento entre os links */
+    margin-top: 20px; /* Espaçamento acima dos botões */
+}
+
+/* Estilos para os links (botões) */
+.button {
+    display: inline-block; /* Comportamento de bloco inline */
+    padding: 5px 10px; /* Reduz o espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    text-decoration: none; /* Remove sublinhado */
+    color: black; /* Cor do texto */
+    background-color: gray; /* Cor de fundo */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de ponteiro ao passar sobre */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease; /* Transição suave de cor */
+}
+
+/* Estilos para os links ao passar o mouse */
+.button:hover {
+    background-color: darkgray; /* Cor de fundo mais escuro ao passar o mouse */
+}

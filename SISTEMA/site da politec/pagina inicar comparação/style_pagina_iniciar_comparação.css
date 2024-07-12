@@ -1,0 +1,88 @@
+/* CSS para o body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    margin: 0; /* Remove a margem padrão do body */
+}
+
+/* CSS para a barra de navegação */
+.barra-de-navegação {
+    background-color: #104060;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente os itens filhos */
+    z-index: 2; /* Garante que a barra de navegação esteja acima da barra lateral */
+}
+
+.barra-de-navegação .icon-link {
+    margin-right: 20px; /* Espaçamento entre o ícone e o título */
+    color: white; /* Cor do ícone */
+}
+
+.barra-de-navegação h1 {
+    margin: 0;
+    margin-left: auto; /* Coloca o h1 na extremidade direita da barra de navegação */
+    padding-right: 30px; /* Adiciona um padding à direita para afastar o h1 da lateral */
+}
+
+.barra-de-navegação .icone {
+    font-size: 1.5em; /* Ajuste o tamanho do ícone conforme necessário */
+}
+
+/* CSS para a div centralizada */
+.centralizado {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; /* Centraliza o texto */
+}
+
+.icone-centralizado {
+    display: inline-block; /* Para que o width e height funcionem */
+    width: auto; /* Define a largura automaticamente */
+    max-width: calc(100% - 40px); /* Largura máxima baseada no espaço disponível com margem de 20px em cada lado */
+    font-size: 3em; /* Ajusta o tamanho do ícone */
+    color: black; /* Cor do ícone */
+    border: 2px solid #104060; /* Adiciona borda */
+    border-radius: 10px; /* Borda arredondada */
+    padding: 40px; /* Espaçamento interno ajustado */
+    margin: 40px 0; /* Espaçamento superior e inferior */
+    width: fit-content; /* Define a largura conforme o conteúdo */
+    margin-left: auto; /* Centraliza horizontalmente */
+    margin-right: auto; /* Centraliza horizontalmente */
+}
+
+.icone-centralizado i {
+    margin: 0; /* Remove a margem padrão do ícone */
+    padding: 100px;
+}
+
+.botao-centralizado {
+    margin-top: 20px; /* Espaçamento entre o ícone e o botão */
+}
+
+.enviar-link {
+    display: block; /* Faz o link se comportar como um bloco para ficar abaixo do ícone */
+    margin: 20px auto; /* Centraliza o link horizontalmente */
+    background-color: #104060; /* Cor de fundo do link */
+    color: white; /* Cor do texto do link */
+    padding: 10px 20px; /* Espaçamento interno do link */
+    text-align: center; /* Centraliza o texto dentro do link */
+    text-decoration: none; /* Remove o sublinhado do link */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer; /* Altera o cursor ao passar por cima */
+    transition: background-color 0.3s; /* Adiciona transição suave */
+    width: fit-content; /* Ajusta a largura conforme o conteúdo */
+    min-width: 100px; /* Define uma largura mínima para o link */
+    font-size: 16px; /* Tamanho da fonte ajustado */
+}
+
+.enviar-link:hover {
+    background-color: #104060; /* Cor de fundo do link ao passar o mouse */
+}
